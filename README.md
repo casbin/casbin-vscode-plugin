@@ -5,11 +5,10 @@ Plugin for editing Casbin model and policy in VSCode.
 ## Provides:
 
 - syntax highlighting
-- Exclusive file icon
 
 ## Editor Show
 
-![image-20210930183509874](./assets/screenshots/casbin_editor.png)
+![image-20210930183509874](./images/casbin_editor.png)
 
 ## TODO LIST
 

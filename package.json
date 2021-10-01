@@ -1,46 +1,44 @@
 {
-	"name": "hello",
-	"publisher": "casbin",
-	"displayName": "hello",
-	"description": "hello",
+	"name": "casbin",
 	"version": "0.0.1",
+	"publisher": "casbin",
+	"description": "Rich Casbin support for Visual Studio Code",
+	"license": "Apache2.0",
+	"icon": "images/casbin-logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/casbin/casbin-vscode-plugin"
+	},
 	"engines": {
 		"vscode": "^1.60.0"
 	},
 	"categories": [
-		"Other"
+		"Extension Packs", "Language Packs","Other"
 	],
 	"activationEvents": [
-		"onCommand:hello.helloWorld"
+		
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "hello.helloWorld",
-				"title": "Hello World"
-			}
-		],
-		"iconThemes": [
-			{
-				"id": "casbin",
-				"label": "Casbin",
-				"path": "./fileicons/casbin-icon-theme.json"
-			}
+			
 		],
 		"languages": [
-            {
-                "id": "casbin",
-                "extensions": [".conf",".csv"]
-            }
-        ],
-        "grammars": [
-            {
-                "language": "casbin",
-                "scopeName": "source.conf",
-                "path": "./syntaxes/casbin.grammar.json"
-            }
-        ]
+			{
+				"id": "casbin",
+				"extensions": [
+					".conf",
+					".csv"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "casbin",
+				"scopeName": "source.conf",
+				"path": "./syntaxes/casbin.conf-csv.tmGrammar.json"
+			}
+		]
 	},
 	"scripts": {
 		"lint": "eslint .",
