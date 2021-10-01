@@ -25,7 +25,7 @@
             }
         },
         "casbin-keywords": {
-            "match": "([a-zA-Z0-9_]*?)\\(",
+            "match": "([a-zA-Z0-9_]*?) *?\\(",
             "captures":{
                 "1": { "name" : "entity.name.function"}
             }
