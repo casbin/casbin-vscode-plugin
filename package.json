@@ -1,5 +1,6 @@
 {
 	"name": "hello",
+	"publisher": "casbin",
 	"displayName": "hello",
 	"description": "hello",
 	"version": "0.0.1",
