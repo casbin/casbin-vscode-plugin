@@ -1,7 +1,7 @@
 {
-	"name": "casbin",
+	"name": "Casbin",
 	"version": "0.0.1",
-	"publisher": "casbin",
+	"publisher": "Casbin",
 	"description": "Rich Casbin support for Visual Studio Code",
 	"license": "Apache2.0",
 	"icon": "images/casbin-logo.png",
