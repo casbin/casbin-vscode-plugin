@@ -1,60 +1,61 @@
 {
-	"name": "vscode-casbin",
-	"version": "0.0.2",
-	"displayName": "Casbin",
-	"publisher": "Casbin",
-	"description": "Rich Casbin support for Visual Studio Code",
-	"license": "Apache2.0",
-	"icon": "images/casbin-logo.png",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/casbin/casbin-vscode-plugin"
-	},
-	"engines": {
-		"vscode": "^1.60.0"
-	},
-	"categories": [
-		"Extension Packs", "Language Packs","Other"
-	],
-	"activationEvents": [
-		
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [
-			
-		],
-		"languages": [
-			{
-				"id": "casbin",
-				"extensions": [
-					".conf",
-					".csv"
-				]
-			}
-		],
-		"grammars": [
-			{
-				"language": "casbin",
-				"scopeName": "source.conf",
-				"path": "./syntaxes/casbin.conf-csv.tmGrammar.json"
-			}
-		]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.60.0",
-		"@types/glob": "^7.1.4",
-		"@types/mocha": "^9.0.0",
-		"@types/node": "14.x",
-		"eslint": "^7.32.0",
-		"glob": "^7.1.7",
-		"mocha": "^9.1.1",
-		"typescript": "^4.4.3",
-		"@vscode/test-electron": "^1.6.2"
-	}
+    "name": "vscode-casbin",
+    "version": "0.0.2",
+    "displayName": "Casbin",
+    "publisher": "Casbin",
+    "description": "Rich Casbin support for Visual Studio Code",
+    "license": "Apache2.0",
+    "icon": "images/casbin-logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/casbin/casbin-vscode-plugin"
+    },
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Extension Packs",
+        "Language Packs",
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./extension.js",
+    "capabilities": {
+        "hoverProvider": "true"
+    },
+    "contributes": {
+        "commands": [],
+        "languages": [
+            {
+                "id": "casbin",
+                "extensions": [
+                    ".conf",
+                    ".csv"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "casbin",
+                "scopeName": "source.conf",
+                "path": "./syntaxes/casbin.conf-csv.tmGrammar.json"
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.60.0",
+        "@types/glob": "^7.1.4",
+        "@types/mocha": "^9.0.0",
+        "@types/node": "14.x",
+        "eslint": "^7.32.0",
+        "glob": "^7.1.7",
+        "mocha": "^9.1.1",
+        "typescript": "^4.4.3",
+        "@vscode/test-electron": "^1.6.2"
+    }
 }
