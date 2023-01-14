@@ -1,4 +1,7 @@
-on: [push, pull_request]
+on:
+  push:
+    tags:
+      - '*'
 
 name: Deploy To GitHub Releases and VSCode Extension Marketplace
 jobs:
@@ -6,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
       - name: Run semantic-release
         if: github.repository == 'casbin/casbin-vscode-plugin' && github.event_name == 'push'
         run: yarn install && yarn semantic-release
